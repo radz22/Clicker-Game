@@ -97,11 +97,10 @@ const ClickerPage = () => {
     function handleCLickAdd (){
        
         
-           if(count == 0){
-            setDisplayAlertUser(true)
-           }else{
+           if(count > 0){
             setClick((prev) => prev + 1)
-           }
+
+            }
      
 if(user == ""){
     setClick(0)
@@ -270,7 +269,7 @@ console.log(click)
 <div>
 <h1 className='text-slate-300	 text-xl	font-semibold font-serif
 
-	'>pls input your Name or Select your Time before you Start!!! </h1>
+	'>pls input your Name before you Start!!! </h1>
 
 </div>
 <div>
