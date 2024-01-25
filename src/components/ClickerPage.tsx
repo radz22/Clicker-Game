@@ -169,7 +169,7 @@ console.log(click)
 
 <div className='mt-12 w-full'>
 <div>
-    <h1 className='text-center text-2xl	font-semibold max-xl:text-xl max-md:text-lg		'>Radz</h1>
+    <h1 className='text-center text-2xl	font-semibold max-xl:text-xl max-md:text-lg		'>Put Your Finger-clicking speed to the test</h1>
 </div>
 <div className='flex items-center justify-center  mt-10 w-full	'>
     
