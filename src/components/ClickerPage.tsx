@@ -163,13 +163,13 @@ console.log(click)
     </div>
     <div>
   <h1 className='text-4xl text-sky-600 font-bold	font-serif
-'>Clicker <span className='text-black'>Game</span></h1>
+ max-xl:text-3xl	max-md:text-2xl'>Clicker <span className='text-black'>Game</span></h1>
     </div>
 </div>
 
 <div className='mt-12 w-full'>
 <div>
-    <h1 className='text-center text-2xl	font-semibold'>Put Your Finger-clicking speed to the test</h1>
+    <h1 className='text-center text-2xl	font-semibold max-xl:text-xl max-md:text-lg		'>Put Your Finger-clicking speed to the test</h1>
 </div>
 <div className='flex items-center justify-center  mt-10 w-full	'>
     
@@ -177,19 +177,19 @@ console.log(click)
     value={user}
     onChange={(e) => setUser(e.target.value)}
     placeholder='Enter Your Name'
-    className='w-1/4 py-3 px-3 text-lg	border-2 border-sky-600 bg-slate-100		rounded-md	'
+    className='w-1/4 py-3 px-3 text-lg	border-2 border-sky-600 bg-slate-100		rounded-md	max-xl:w-1/3 max-md:w-2/4		'
     />
 </div>
 <div className='flex items-center justify-center gap-6 mt-16'>
 
 <div>
-<button className='text-3xl font-semibold py-3 px-12  bg-sky-600 text-white rounded-lg	 ' onClick={handleSeconds5s}>5s</button>
+<button className='text-3xl font-semibold py-3 px-12  bg-sky-600 text-white rounded-lg	max-xl:text-2xl max-xl:px-10 max-md:text-xl max-xl:px-8' onClick={handleSeconds5s}>5s</button>
 </div>
 <div>
-<button className='text-3xl font-semibold py-3 px-12  bg-sky-600 text-white rounded-lg	 ' onClick={handleSeconds10s}>10s</button>
+<button className='text-3xl font-semibold py-3 px-12  bg-sky-600 text-white rounded-lg	 max-xl:text-2xl max-xl:px-10 max-md:text-xl max-xl:px-8 ' onClick={handleSeconds10s}>10s</button>
 </div>
 <div>
-<button className='text-3xl font-semibold py-3 px-12  bg-sky-600 text-white rounded-lg	 ' onClick={handleSeconds20s}>20s</button>
+<button className='text-3xl font-semibold py-3 px-12  bg-sky-600 text-white rounded-lg	 max-xl:text-2xl max-xl:px-10 max-md:text-xl max-xl:px-8' onClick={handleSeconds20s}>20s</button>
 </div>
 
 </div>
@@ -198,11 +198,11 @@ console.log(click)
 
 <div className='w-full flex items-center justify-center flex-col relative'> 
 
-<div className='bg-sky-300	mt-20 w-4/5	px-4 py-4 h-96		'>
+<div className='bg-sky-300	mt-20 w-4/5	px-4 py-4 h-96	 max-md:w-11/12		'>
     
     <div className='flex items-center justify-between'>
        <div>
-       <button className=' bg-red-800	 text-white text-lg  py-3 px-3 font-semibold	rounded	' onClick={handleReset} >Reset</button>
+       <button className=' bg-red-800	 text-white text-lg  py-3 px-3 font-semibold	rounded max-md:text-base	' onClick={handleReset} >Reset</button>
 
        </div>
        <div>
@@ -214,12 +214,11 @@ console.log(click)
         <h1 className='text-center  text-black text-5xl		'>{click}</h1>
     </div>
     
-
 </div>
 
 <div className='absolute bottom-[-20px] '>
 <div>
-<button className=' bg-sky-600 text-white text-2xl	py-3 px-3 font-semibold	rounded	' onClick={handleCLickAdd} >Click me as fast as you can!</button>
+<button className=' bg-sky-600 text-white text-2xl	py-3 px-3 font-semibold	rounded	max-xl:text-xl max-md:text-lg	' onClick={handleCLickAdd} >Click me as fast as you can!</button>
 </div>
 </div>
 
@@ -228,13 +227,15 @@ console.log(click)
 <div className=' mt-24 w-full flex items-center justify-center flex-col'>
 
 <div className='bg-sky-600 px-3 py-3 mb-10'>
-    <h1 className='text-center text-3xl		text-white'>Record</h1>
+    <h1 className='text-center text-3xl		text-white 	max-xl:text-2xl'>Record</h1>
 </div>
 
 
+
+<div className='w-full flex items-center justify-center flex-col '>
 {
    record.map((item) => (
-    <div className='bg-slate-200		 px-3 py-3 w-4/5	mb-10'>
+    <div className='bg-slate-200		 px-3 py-3 w-4/5	 max-md:w-11/12	mb-10'>
 
 
         <div className='flex items-center justify-between'>
@@ -253,27 +254,25 @@ console.log(click)
    ))
   }
 
-<div>
-
 </div>
 </div>
 
 
-<div className={`${displayAlertUser ? "block" : "hidden"} absolute  z-10   top-[48%] w-full flex items-center justify-center flex-col`}>
-<div className='bg-[#cb1111] rounded-md		 px-10 py-10 w-[40%] h-44		 '>
+<div className={`${displayAlertUser ? "block" : "hidden"} absolute  z-10   top-[48%] max-xl:top-[50%]  max-md:top-[35%] max-sm:top-[42%] w-full flex items-center justify-center flex-col`}>
+<div className='bg-[#cb1111] rounded-md		 px-10 py-10 w-[40%] h-44	max-xl:w-[64%]  max-md:w-[70%]  max-sm:w-[86%]	 '>
 
 <div className='flex items-end justify-end mb-2'>
-    <h1 className='font-semibold	px-2 py-1 text-2xl text-black	 bg-sky-300	mt cursor-pointer	rounded-md	' onClick={handleClose}><IoCloseOutline /></h1> 
+    <h1 className='font-semibold	px-2 py-1 text-2xl text-black	 bg-sky-300	mt cursor-pointer	rounded-md  max-md:text-xl	' onClick={handleClose}><IoCloseOutline /></h1> 
 </div>
 <div className='flex items-center justify-center gap-2 mt-5'>
 <div>
 <h1 className='text-slate-300	 text-xl	font-semibold font-serif
 
-	'>pls input your Name before you Start!!! </h1>
+max-md:text-lg	max-sm:text-base 	max-sm:w-full'>pls input your Name before you Start!!! </h1>
 
 </div>
 <div>
-<h1 className='text-white text-2xl		font-semibold'><BsMouse3Fill />
+<h1 className='text-white text-2xl		font-semibold max-md:hidden'><BsMouse3Fill />
 </h1>
 </div>
 
@@ -282,8 +281,8 @@ console.log(click)
 </div>
 
 
-<div className={`${result ? "block" : "hidden"} absolute  z-10   top-[44%] w-full flex items-center justify-center flex-col`}>
-<div className='bg-sky-600	rounded-md	 px-10 py-10 w-[40%] h-auto		 '>
+<div className={`${result ? "block" : "hidden"} absolute  z-10   top-[44%] max-md:top-[32%] w-full flex items-center justify-center flex-col max-xl:top-[37%] `}>
+<div className='bg-sky-600	rounded-md	 px-10 py-10 w-[40%] h-auto		max-xl:w-[45%] max-md:w-[75%]'>
 
 <div className='flex items-end justify-end mb-2'>
     <h1 className='font-semibold	px-2 py-1 text-2xl text-black	 bg-sky-300	mt cursor-pointer	rounded-md	' onClick={handleResultClose}><IoCloseOutline /></h1> 
@@ -301,11 +300,11 @@ console.log(click)
     
     <div className='w-1/2	'>
   <div>
-  <h1 className='text-xl	text-slate-300'>Name: <span className='text-2xl text-white'>{user.toUpperCase()}</span></h1>
+  <h1 className='text-xl	text-slate-300'>Name: <span className='text-2xl text-white max-xl:text-xl'>{user.toUpperCase()}</span></h1>
     </div>  
 
     <div>
-  <h1 className='text-xl	text-slate-300'>Seconds: <span className='text-2xl text-white'>{recordSeconds}s</span></h1>
+  <h1 className='text-xl	text-slate-300'>Seconds: <span className='text-2xl text-white max-xl:text-xl'>{recordSeconds}s</span></h1>
     </div> 
  
 
@@ -313,11 +312,11 @@ console.log(click)
 
     <div className='w-1/2		 '>
   <div >
-  <h1 className='text-xl	text-slate-300'>Score: <span className='text-2xl text-white'>{click}</span></h1>
+  <h1 className='text-xl	text-slate-300'>Score: <span className='text-2xl text-white max-xl:text-xl'>{click}</span></h1>
     </div>  
 
     <div >
-  <h1 className='text-xl	text-slate-300'>Time: <span className='text-2xl text-white'>{currentTime}</span></h1>
+  <h1 className='text-xl	text-slate-300'>Time: <span className='text-2xl text-white max-xl:text-xl'>{currentTime}</span></h1>
     </div> 
  
     </div>
