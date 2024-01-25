@@ -177,7 +177,7 @@ console.log(click)
     value={user}
     onChange={(e) => setUser(e.target.value)}
     placeholder='Enter Your Name'
-    className='w-1/4 py-3 px-3 text-lg	border-2 border-sky-600 bg-slate-100		rounded-md	max-xl:w-1/3 max-md:w-2/4		'
+    className='w-1/4 py-3 px-3 text-lg	border-2 border-sky-600 bg-slate-100		rounded-md	max-xl:w-1/3 max-md:w-2/4  max-sm:w-10/12			'
     />
 </div>
 <div className='flex items-center justify-center gap-6 mt-16'>
